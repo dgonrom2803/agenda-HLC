@@ -9,11 +9,11 @@ import { map } from 'rxjs/operators';
 })
 export class HomePage {
 
-  users: any;
+  pets: any;
   filtro: string = "";
 
   constructor(private httpClient:HttpClient) {
-    this.users = this.httpClient.get('https://randomuser.me/api/?results=20').pipe(map((res:any)=>res['results']));
+    this.pets = this.httpClient.get('https://raw.githubusercontent.com/dgonrom2803/agenda-HLC/master/src/lista_mascotas.json');
   }
 
 }
