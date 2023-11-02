@@ -12,9 +12,9 @@
         <ion-col *ngIf="filtro=='' || pet.breed.startsWith(filtro)" size-xl="2" size-lg="3" size-md="4" size-sm="6" size-xs="12">
           <ion-card>
             <ion-card-content>
-              <!-- <ion-avatar>
-                <!-- <img [src]="pet.picture.medium" />
-              </ion-avatar> -->
+              <ion-avatar>
+                <img [src]="pet.imagen.medium" />
+              </ion-avatar>
               <p>{{ pet.breed }}</p>
               <p>{{ pet.pet_name }}</p>
               <p>{{ pet.age }}</p>
