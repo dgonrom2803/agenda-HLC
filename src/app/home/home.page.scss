@@ -25,3 +25,9 @@
 #container a {
   text-decoration: none;
 }
+
+@media (orientation: portrait){
+  .divInfo{
+    display: none;
+  }
+}
